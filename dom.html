@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="https://images.pexels.com/photos/27731441/pexels-photo-27731441/free-photo-of-a-black-and-white-photo-of-a-boat-on-the-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="boat">
+    <br>
+    <button id="toggleButton" onclick="toggleImage()">button</button>
+
+
+    <script>
+        function toggleImage() {
+            const image = document.getElementById("image");
+            const button = document.getElementById("toggleButton");
+
+            if (image.style.display === "none") {
+                image.style.display ="block";
+                button.textContent ="Hide Image";
+            } 
+            else {
+                image.style.display ="none";
+                button.textContent = "Show Images";
+            }
+            
+
+        
+        }
+        function () {
+                alert("hi");
+            }
+    </script>
+
+</body>
+</html>
